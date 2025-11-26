@@ -3,7 +3,6 @@ import {
   HARD_CHANCES,
   MEDIUM_CHANCES,
 } from "../constants/gameConstants.js";
-import { log } from "../utils/logger.js";
 
 export function setGameDifficulty(choice) {
   let level = {};
@@ -22,8 +21,7 @@ export function setGameDifficulty(choice) {
       break;
 
     default:
-      log("Invalid level!");
-      process.exit(1);
+      throw new Error("Invalid difficulty level");
   }
 
   return level;

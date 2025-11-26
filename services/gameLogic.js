@@ -1,9 +1,9 @@
-export function verifyGuess(num, guess) {
-  if (num == guess) {
-    return "correct";
-  } else if (num > guess) {
-    return "high";
-  } else {
-    return "low";
-  }
+export function verifyGuess(secret, guess) {
+  const g = Number(guess);
+
+  if (Number.isNaN(g)) return "Invalid";
+  if (secret === g) return "correct";
+  if (secret > g) return "high";
+
+  return "low";
 }

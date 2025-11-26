@@ -87,3 +87,8 @@ Node.js – Backend runtime
 @inquirer/prompts – For interactive CLI inputs
 Chalk – Colorful console output
 ES Modules – Modern JS import/export
+
+## Project Link
+
+I got inspiration for this project from Roadmap
+🔗 https://roadmap.sh/projects/number-guessing-game
